@@ -1,0 +1,81 @@
+/* PAGE STRUCTURE */
+
+.structure::after  {
+   content: 'Page Structure';
+}
+
+.structure:hover::after  {
+   content: 'Learn more!';
+}
+
+/* TEXT TAGS */
+.textTags::after  {
+   content: 'Text Tags';
+}
+
+.textTags:hover::after  {
+   content: 'Learn more!';
+}
+
+/* FORMATTING */
+.formatting::after  {
+   content: 'Formatting';
+}
+
+.formatting:hover::after  {
+   content: 'Learn more!';
+}
+
+/* LISTS */
+.lists::after  {
+   content: 'Lists';
+}
+
+.lists:hover::after  {
+   content: 'Learn more!';
+}
+
+/* TABLES */
+.tables::after  {
+   content: 'Tables';
+}
+
+.tables:hover::after  {
+   content: 'Learn more!';
+}
+
+/* FORMS */
+.forms::after  {
+   content: 'Forms';
+}
+
+.forms:hover::after  {
+   content: 'Learn more!';
+}
+
+/* LINKS */
+.links::after  {
+   content: 'Links';
+}
+
+.links:hover::after  {
+   content: 'Learn more!';
+}
+
+/* IMAGES & AUDIO */
+.imgAudio::after  {
+   content: 'Images & Audio';
+}
+
+.imgAudio:hover::after  {
+   content: 'Learn more!';
+}
+
+/* MORE TAGS */
+.moreTags::after  {
+   content: 'Other Tags!';
+}
+
+.moreTags:hover::after  {
+   content: 'Learn more!';
+}
