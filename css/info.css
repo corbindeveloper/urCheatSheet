@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+:root {
+    --main-blue: rgb(60, 150, 255);
+    --main-yellow: rgb(255, 250, 180);
+    --main-white: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+}
+
+.side-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    width: 15%;
+    background-color: var(--main-yellow);
+    min-height: 100vh;
+}
+
+.logo {
+    padding: 3% 0 15% 0;
+}
+
+.logo > a {
+    color: var(--main-blue);
+    text-decoration: none;
+}
+
+.side-nav {
+    list-style: none;
+}
+
+.side-nav > li {
+    padding: 3% 0;
+    font-size: 18px;
+}
+
+.side-nav > li > a {
+    text-decoration: none;
+    color: var(--main-blue);
+    border-bottom: 2px solid transparent;
+}
+
+.side-nav > li > a:hover {
+    border-bottom: 2px solid var(--main-blue);
+    width: 100%;
+}
+
+
+/*CONTENT CONTAINER*/
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 3%;
+    border-left: 2px solid rgb(255, 240, 130);
+}
+
+.subject-title {}
+
+.subject-intro {
+    padding: 3% 0;;
+    width: 80%;
+}
+
+.subject-text {
+    padding-bottom: 5%;
+}
+
+.learn-more-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 5% 2% 5% 0;
+    color: black;
+    content: "Learn more on this!";
+    width: 33%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

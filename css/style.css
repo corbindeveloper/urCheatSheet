@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+:root {
+    --main-blue: rgb(60, 150, 255);
+    --main-yellow: rgb(255, 245, 180);
+    --main-white: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-color: var(--main-yellow);
+}
+
+.logo-stripe {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 0 1% 0;
+    color: var(--main-white);
+    background-color: var(--main-blue);
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.sub-logo {
+    font-size: 1.3rem;
+    padding-bottom: 1%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 100%;
+    margin: 0 35% 0 35%;
+}
+
+.language-btn {
+    padding: 4% 8%;
+    background-color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.language-btn:hover {
+    cursor: pointer;
+}
+
+.language-btn:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.language-btn > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--main-blue);
+    color: rgb(255, 255, 255);
+    padding: 1% 0;
+    max-width: 100%;
+    text-align: center;
+}

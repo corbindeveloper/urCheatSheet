@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../codemirror/lib/codemirror.js"></script>
+  <link rel="stylesheet" href="../codemirror/lib/codemirror.css">
+  <script src="../codemirror/mode/xml/xml.js"></script>
+  <script src="../codemirror/addon/edit/closetag.js"></script>
+  <script src="../codemirror/addon/edit/closebrackets.js"></script>
+  <link href="../codemirror/theme/dracula.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/info.css">
+  <title>urCheatSheet - HTML5</title>
+</head>
+
+<body>
+  <div class="side-container">
+    <h1 class="logo"><a href="../index.html">urCheatSheet</a></h1>
+    <ul class="side-nav">
+      <li><a href="htmlFive.html">Basic Structure</a></li>
+      <li><a href="textTags.html">Text Tags</a></li>
+      <li><a href="formatting.html">Formatting</a></li>
+
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+
+      <li><a href="links.html">Links</a></li>
+      <li><a href="imgAudio.html">Img Audio</a></li>
+      <li><a href="moreTags.html">More Tags</a></li>
+    </ul>
+  </div>
+  <div class="content-container">
+    <h1 class="subject-title">Links</h1>
+    <p class="subject-intro"></p>
+    <p class="subject-text"></p>
+    <p class="subject-text"></p>
+<!--   CODE EDITOR   -->
+<div class="editor-container">
+<textarea id="editor">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body>
+    <p>Your Content Goes Here!</p>
+  </body>
+</html>
+</textarea>
+</div>
+<!--END EDITOR -->
+
+    <a href="#LearnMore" class="learn-more-link">Learn more on this!</a> 
+  </div> 
+  <!-- CONTENT CONTAINER ENDS -->
+  
+  
+<!-- EDITOR SCRIPT -->
+  <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+            mode: "xml",
+            theme: "dracula",
+            lineNumbers: true,
+            autoCloseTags: true
+        });
+        
+        editor.setSize("100%", "100%");
+    </script>
+</body>
+
+</html>
