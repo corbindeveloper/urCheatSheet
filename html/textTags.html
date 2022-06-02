@@ -12,7 +12,9 @@
   <link href="../codemirror/theme/dracula.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/info.css">
   <title>urCheatSheet - HTML5</title>
 </head>
@@ -34,62 +36,86 @@
       <li><a href="moreTags.html">More Tags</a></li>
     </ul>
   </div>
+
   <div class="content-container">
     <h1 class="subject-title">Text Tags</h1>
-    <p class="subject-intro">Put some text on the page!</p>
-<!--
+    <p class="subject-intro">h1-h6 are what's known as header text elements. These elements decrement in size with h1 being the largest and h6 being the smallest.</p>
+    <!--
     <p class="subject-text"></p>
     <p class="subject-text"></p>
 -->
 
-<!--   CODE EDITOR   -->
-<div class="editor-container">
-<textarea id="editor">
+
+    <!--   CODE EDITOR (ONE)  -->
+    <div class="editor-container">
+      <textarea id="editor">
 <h1>Header 1</h1>
 <h2>Header 2</h2>
 <h3>Header 3</h3>
 <h4>Header 4</h4>
 <h5>Header 5</h5>
 <h6>Header 6</h6></textarea>
-</div>
-<!--END EDITOR -->
-<br>
-<br>
-<p class="subject-text">This is how you can apply bold italics to text.</p>
-<!--   CODE EDITOR   -->
-<div class="editor-container">
-<textarea id="editorTwo">
-<em>Italicize</em>
-<strong>Bold</strong></textarea>
-</div>
-<!--END EDITOR -->
-    
+    </div>
+    <!--END EDITOR -->
 
-    <a href="#LearnMore" class="learn-more-link">Learn more on this!</a> 
-  </div> 
+    <p class="subject-text">Sometimes you need to bold or italicize certain text or maybe just a word. You can utilize these texts even inside another text element such as an h3.</p>
+
+
+    <!--   CODE EDITOR (TWO) -->
+    <div class="editor-container">
+      <textarea id="editorTwo">
+<em>Italicize</em>
+<strong>Bold</strong>
+<!-- EXAMPLE -->
+<h3>This is an <strong>Example</strong></h3>
+<!-- This would result in just the word example being bold in the sentence. --></textarea>
+    </div>
+    <!--END EDITOR -->
+
+
+    <p class="subject-text">Citation and address are two more specific tags and have a more specific use case. <br>
+    Cite creates a citation that is usually processed in italics. On the other hand, address creates an address section usually process in italics.</p>
+
+
+    <!--   CODE EDITOR  (THREE) -->
+    <div class="editor-container">
+      <textarea id="editorThree">
+  <cite>Creates a citation</cite>
+  <address>Creates a address section</address></textarea>
+    </div>
+    <!--END EDITOR -->
+
+    <a href="#LearnMore" class="learn-more-link">Learn more on this!</a>
+  </div>
   <!-- CONTENT CONTAINER ENDS -->
-  
-  
-<!-- EDITOR SCRIPT -->
+
+
+  <!-- EDITOR SCRIPT -->
   <script>
-        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-            mode: "xml",
-            theme: "dracula",
-            lineNumbers: true,
-            autoCloseTags: true
-        });
-        
-        editor.setSize("100%", "100%");
-    
+    var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+      mode: "xml",
+      theme: "dracula",
+      lineNumbers: true,
+      autoCloseTags: true
+    });
+    editor.setSize("100%", "100%");
+
     var editorTwo = CodeMirror.fromTextArea(document.getElementById('editorTwo'), {
-            mode: "xml",
-            theme: "dracula",
-            lineNumbers: true,
-            autoCloseTags: true
-        });
-        
-        editorTwo.setSize("100%", "100%");
-    </script>
+      mode: "xml",
+      theme: "dracula",
+      lineNumbers: true,
+      autoCloseTags: true
+    });
+    editorTwo.setSize("100%", "100%");
+
+    var editorThree = CodeMirror.fromTextArea(document.getElementById('editorThree'), {
+      mode: "xml",
+      theme: "dracula",
+      lineNumbers: true,
+      autoCloseTags: true
+    });
+    editorThree.setSize("100%", "100%");
+  </script>
 </body>
 
 </html>

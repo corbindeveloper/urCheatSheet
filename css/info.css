@@ -69,12 +69,12 @@ body {
 .subject-title {}
 
 .subject-intro {
-    padding: 3% 0;;
+    padding: 5% 0 1% 0;
     width: 80%;
 }
 
 .subject-text {
-    padding-bottom: 5%;
+    padding: 5% 0 1% 0;
 }
 
 .learn-more-link {

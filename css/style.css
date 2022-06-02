@@ -73,6 +73,48 @@
     font-weight: 700;
 }
 
+/* HOME CONTENT DISPLAY */
+.home-content {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-self: center;
+}
+
+.home-thanks {
+    padding-bottom: 2%;
+}
+
+.home-text {
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255,.4);
+    padding: 1% 1.5%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+}
+
+/* CONTRIBUTE BUTTON */
+.contribute-btn {
+    width: 15%;
+    padding: 1% 1.5%;
+    border-radius: 20px;
+    border: 2px solid rgb(60, 150, 255);
+    background-color: rgba(255, 255, 255,.4);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+.contribute-btn:hover {
+    cursor: pointer;
+}
+
+.contribute-btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
 footer {
     background-color: var(--main-blue);
     color: rgb(255, 255, 255);

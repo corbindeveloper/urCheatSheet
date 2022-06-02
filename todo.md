@@ -16,3 +16,9 @@ Will have to  sort out the width when sorting querys
 - Needs to be style with an interactive arrow or something of that nature.
 - Will have to be resized at every query
 - Without hard set width it's taking up the whole line and the hover isn't properly working.
+
+## Transitions/Animations
+- Have the content ease-in after the slide bar 
+
+## Contribute button
+- Needs to be made responsive 
